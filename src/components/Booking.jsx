@@ -54,7 +54,7 @@ function Booking() {
   }
 
   return (
-    <section className="bg-mist">
+    <section id='book' className="bg-mist">
       <div className="max-w-2xl mx-auto px-6 sm:px-8 py-20">
         <p className="eyebrow mb-3">Бронирование</p>
 
