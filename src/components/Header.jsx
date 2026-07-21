@@ -23,9 +23,8 @@ function Header() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-colors duration-300 ${
-        scrolled ? 'bg-ink/95 backdrop-blur-sm shadow-lg shadow-black/10' : 'bg-transparent'
-      }`}
+      className={`fixed top-0 inset-x-0 z-50 transition-colors duration-300 ${scrolled ? 'bg-ink/95 backdrop-blur-sm shadow-lg shadow-black/10' : 'bg-transparent'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between h-16 sm:h-20">
         <a href="#top" className="font-display text-lg sm:text-xl tracking-wide text-mist">
@@ -46,7 +45,7 @@ function Header() {
 
         <div className="hidden lg:flex items-center gap-5">
           <a href="tel:+998950011144" className="text-sm text-mist/90 hover:text-gold transition-colors">
-            +998 95 001 11 44
+            +998 95 212 02 20
           </a>
           <a
             href="#book"
@@ -97,7 +96,7 @@ function Header() {
               Забронировать
             </a>
             <a href="tel:+998950011144" className="mt-3 text-center text-sm text-mist/70">
-              +998 95 001 11 44
+              +998 95 212 00 20
             </a>
           </nav>
         </div>

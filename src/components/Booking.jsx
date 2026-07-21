@@ -54,22 +54,25 @@ function Booking() {
   }
 
   return (
-    <section>
-      <div>
-        <h2>Бронирование</h2>
+    <section className="bg-mist">
+      <div className="max-w-2xl mx-auto px-6 sm:px-8 py-20">
+        <p className="eyebrow mb-3">Бронирование</p>
 
-        <h3>Забронируйте отдых в горах</h3>
+        <h2 className="font-display text-3xl sm:text-4xl text-ink leading-tight mb-4">
+          Забронируйте отдых в горах
+        </h2>
 
-        <p>
+        <p className="text-ink/70 leading-relaxed mb-6">
           Оставьте заявку — администратор перезвонит, подберёт номер и программу
           оздоровления.
           <br />
           Или позвоните напрямую:
         </p>
 
-        <p>+998 95 001 11 44</p>
-
-        <p>+998 95 001 11 88</p>
+        <div className="flex flex-col sm:flex-row gap-1 sm:gap-4 mb-10">
+          <p className="text-ink font-medium">+998 95 212 00 20 </p>
+          <p className="text-ink font-medium">+998 95 212 02 20 </p>
+        </div>
 
         <form
           onSubmit={handleSubmit}

@@ -21,10 +21,10 @@ function Contacts() {
             <p className="text-xs font-mono uppercase tracking-wide text-mist/45 mb-2">Телефоны</p>
             <p className="space-x-4">
               <a href="tel:+998950011144" className="text-mist/80 hover:text-gold transition-colors">
-                +998 95 001 11 44
+                +998 95 212 02 20
               </a>
               <a href="tel:+998950011188" className="text-mist/80 hover:text-gold transition-colors">
-                +998 95 001 11 88
+                +998 95 212 00 20
               </a>
             </p>
           </div>
