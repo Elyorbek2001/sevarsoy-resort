@@ -6,7 +6,7 @@ export default async function handler(req, res) {
     }
 
     try {
-        const { name, phone, message } = req.body;
+        const { name, phone, date, message } = req.body;
 
         if (!name || !phone) {
             return res.status(400).json({
@@ -17,13 +17,12 @@ export default async function handler(req, res) {
         const BOT_TOKEN = process.env.BOT_TOKEN;
         const CHAT_ID = process.env.CHAT_ID;
 
-        const text = `
-  🔔 Yangi bron so'rovi
-  
-  👤 Ism: ${name}
-  📞 Telefon: ${phone}
-  📝 Xabar: ${message || "—"}
-      `;
+        const text =
+            `🔔 Новая заявка на бронирование\n` +
+            `👤 Имя: ${name}\n` +
+            `📞 Телефон: ${phone}\n` +
+            `📅 Дата посещения: ${date || "не указана"}\n` +
+            `📝 Xabar: ${message || "—"}`;
 
         const response = await fetch(
             `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`,
@@ -34,7 +33,7 @@ export default async function handler(req, res) {
                 },
                 body: JSON.stringify({
                     chat_id: CHAT_ID,
-                    text,
+                    text: text,
                 }),
             }
         );
