@@ -1,9 +1,11 @@
 const ITEMS = [
-  { img: 'spa-pool', tag: 'Wellness', title: 'Крытый бассейн', span: 'lg:col-span-2 lg:row-span-2' },
-  { img: 'spa-sauna', tag: '', title: 'Хаммам & сауны', span: '' },
-  { img: 'spa-salt-cave', tag: '', title: 'Соляная пещера', span: '' },
-  { img: 'spa-gym', tag: '', title: 'Тренажерный зал', span: '' },
-  { img: 'spa-cedar-barrel', tag: '', title: 'Кедровая бочка', span: '' },
+  { img: 'spa-pool', tag: 'Wellness', title: 'Крытый бассейн', desc: 'Круглогодичный бассейн с комфортной температурой воды для отдыха и восстановления.', span: 'lg:col-span-2 lg:row-span-2' },
+  { img: 'spa-sauna', tag: '', title: 'Хаммам & сауны', desc: 'Турецкий хаммам и финская сауна для полного расслабления и восстановления.', span: '' },
+  { img: 'spa-salt-cave', tag: '', title: 'Соляная пещера', desc: 'Галотерапия помогает укрепить иммунитет и улучшить состояние дыхательной системы.', span: '' },
+  { img: 'spa-gym', tag: '', title: 'Тренажерный зал', desc: 'Современный зал с профессиональными тренажёрами для поддержания формы.', span: '' },
+  { img: 'spa-cedar-barrel', tag: '', title: 'Кедровая бочка', desc: 'Фитопроцедуры для глубокого расслабления и оздоровления организма.', span: '' },
+  { img: 'spa-massage', tag: '', title: 'Конференц-зал', desc: 'Всё необходимое для проведения семинаров, презентаций и корпоративных мероприятий.', span: '' },
+  { img: 'spa-relax', tag: '', title: 'Конференц-зал', desc: 'Комфортное пространство для встреч и мероприятий.', span: '' },
 ]
 
 function Infrastructure() {
@@ -17,7 +19,7 @@ function Infrastructure() {
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 gap-3 lg:h-[560px]">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 lg:auto-rows-[270px] gap-3">
           {ITEMS.map((item) => (
             <div
               key={item.title}
@@ -28,7 +30,7 @@ function Infrastructure() {
                 alt={item.title}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/0 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/0 to-transparent" />
               <div className="absolute bottom-0 left-0 p-5">
                 {item.tag && (
                   <p className="text-xs font-mono uppercase tracking-wide text-gold mb-1">
@@ -36,6 +38,9 @@ function Infrastructure() {
                   </p>
                 )}
                 <p className="font-display text-lg sm:text-xl text-mist">{item.title}</p>
+                {item.desc && (
+                  <p className="mt-1 text-sm text-mist/80 leading-snug">{item.desc}</p>
+                )}
               </div>
             </div>
           ))}

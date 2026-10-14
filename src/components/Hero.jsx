@@ -13,9 +13,9 @@ function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          // ==============================================
+
           src={fon}
-          // ==============================
+
           alt="SEVARSOY resort — вид на горный комплекс в Чимгане"
           className="w-full h-full object-cover object-center"
         />
