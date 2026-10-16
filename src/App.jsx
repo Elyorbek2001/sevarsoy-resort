@@ -9,6 +9,7 @@ import Gallery from './components/Gallery'
 import Booking from './components/Booking'
 import Contacts from './components/Contacts'
 import Footer from './components/Footer'
+import Restaurant from './components/Restaurant'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Rooms />
         <Nature />
         <Gallery />
+        <Restaurant />
         <Booking />
         <Contacts />
       </main>

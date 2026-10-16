@@ -5,9 +5,9 @@ const IMAGES = [
   { img: 'gallery-4', alt: 'Атмосфера SEVARSOY' },
   { img: 'gallery-5', alt: 'Атмосфера SEVARSOY' },
   { img: 'gallery-6', alt: 'Атмосфера SEVARSOY' },
-  { img: 'gallery-7', alt: 'Атмосфера SEVARSOY' },
+
   { img: 'gallery-8', alt: 'Атмосфера SEVARSOY' },
-  { img: 'gallery-9', alt: 'Атмосфера SEVARSOY' },
+
   { img: 'gallery-10', alt: 'Атмосфера SEVARSOY' },
   { img: 'gallery-11', alt: 'Атмосфера SEVARSOY' },
   { img: 'gallery-12', alt: 'Атмосфера SEVARSOY' },

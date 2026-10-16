@@ -6,6 +6,7 @@ const NAV_LINKS = [
   { href: '#spa', label: 'Инфраструктура' },
   { href: '#rooms', label: 'Номера' },
   { href: '#nature', label: 'Природа' },
+  { href: '#restaurant', label: 'Ресторан и питание' },
   { href: '#contacts', label: 'Контакты' },
 ]
 

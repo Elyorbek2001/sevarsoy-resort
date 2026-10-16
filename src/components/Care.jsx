@@ -1,31 +1,37 @@
 const DIRECTIONS = [
   {
     n: '01',
+    img: 'care-respiratory',
     title: 'Дыхательные пути иневрологические системы',
     text: 'Климатотерапия, ингаляции и галотерапия для здоровья дыхательных путей',
   },
   {
     n: '02',
+    img: 'care-nervous',
     title: 'Нервная система',
     text: 'Снятие стресса, восстановление сна, релакс-программы',
   },
   {
     n: '03',
+    img: 'care-rehab',
     title: 'Реабилитация',
     text: 'Восстановление после болезней и нагрузок, ЛФК',
   },
   {
     n: '04',
+    img: 'care-physio',
     title: 'Физиотерапия',
     text: 'Современные аппаратные процедуры под контролем специалистов',
   },
   {
     n: '05',
+    img: 'care-halotherapy',
     title: 'Галотерапия',
     text: 'Соляная пещера с лечебным микроклиматом',
   },
   {
     n: '06',
+    img: 'care-spa',
     title: 'SPA & массаж',
     text: 'Оздоровительный и расслабляющий уход, кедровая бочка',
   },
@@ -52,10 +58,18 @@ function Care() {
             <a
               key={item.n}
               href="#book"
-              className="group bg-ink p-8 hover:bg-ink-light transition-colors flex flex-col justify-between min-h-[220px]"
+              className="group bg-ink hover:bg-ink-light transition-colors flex flex-col"
             >
-              <span className="font-mono text-sm text-gold/70">{item.n}</span>
-              <div>
+              <div className="relative h-52 overflow-hidden">
+                <img
+                  src={`/img/${item.img}.jpg`}
+                  alt={item.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
+                <span className="absolute top-4 left-5 font-mono text-sm text-gold">{item.n}</span>
+              </div>
+              <div className="p-8 flex-1">
                 <h3 className="font-display text-xl text-mist mb-2 group-hover:text-gold transition-colors">
                   {item.title}
                 </h3>
