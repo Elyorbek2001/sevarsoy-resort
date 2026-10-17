@@ -27,10 +27,10 @@ function Header() {
       className={`fixed top-0 inset-x-0 z-50 transition-colors duration-300 ${scrolled || menuOpen ? 'bg-ink/95 backdrop-blur-sm shadow-lg shadow-black/10' : 'bg-transparent'
         }`}
     >
-      <div className="max-w-7xl mx-auto xl:mx-24 2xl:mx-56 w-full px-5 sm:px-8 flex items-center justify-between gap-4 xl:gap-8 h-16 sm:h-20 xl:h-24">
+      <div className="max-w-screen-2xl mx-auto w-full px-5 sm:px-8 flex items-center justify-between gap-4 xl:gap-6 h-16 sm:h-20">
         <a
           href="#top"
-          className="font-display text-xl sm:text-2xl xl:text-4xl tracking-wide text-mist whitespace-nowrap shrink-0"
+          className="font-display text-xl sm:text-2xl 2xl:text-3xl tracking-wide text-mist whitespace-nowrap shrink-0"
         >
           SEVARSOY <span className="text-gold">resort</span>
         </a>
@@ -40,7 +40,7 @@ function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-lg 2xl:text-xl text-mist/80 hover:text-gold transition-colors whitespace-nowrap"
+              className="text-[15px] 2xl:text-base text-mist/80 hover:text-gold transition-colors whitespace-nowrap"
             >
               {link.label}
             </a>
@@ -48,12 +48,15 @@ function Header() {
         </nav>
 
         <div className="hidden xl:flex items-center gap-5 shrink-0">
-          <a href="tel:+998952120220" className="text-xl text-mist/90 hover:text-gold transition-colors whitespace-nowrap">
+          <a
+            href="tel:+998952120220"
+            className="hidden 2xl:inline text-base text-mist/90 hover:text-gold transition-colors whitespace-nowrap"
+          >
             +998 95 212 02 20
           </a>
           <a
             href="#book"
-            className="inline-flex items-center px-7 py-3.5 border border-gold text-gold text-xl tracking-wide hover:bg-gold hover:text-ink transition-colors whitespace-nowrap"
+            className="inline-flex items-center px-5 py-2.5 border border-gold text-gold text-[15px] 2xl:text-base tracking-wide hover:bg-gold hover:text-ink transition-colors whitespace-nowrap"
           >
             Забронировать
           </a>

@@ -28,7 +28,7 @@ function Hero() {
         className="absolute inset-x-0 bottom-0 h-64 contour-divider opacity-40 pointer-events-none"
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto xl:mx-24 2xl:mx-56 w-full px-5 sm:px-8 pt-28 xl:pt-10 pb-12 sm:pb-20 xl:pb-40 2xl:pb-56">
+      <div className="relative z-10 max-w-screen-2xl mx-auto w-full px-5 sm:px-8 pt-36 pb-10 sm:pb-12 xl:pb-16 2xl:pb-20">
         <p className="eyebrow mb-4 sm:mb-6">Чимган · Тянь-Шань · 1600 м над уровнем моря</p>
 
         <h1 className="font-display text-mist leading-[1.05] text-[2.4rem] sm:text-6xl lg:text-7xl max-w-3xl">
