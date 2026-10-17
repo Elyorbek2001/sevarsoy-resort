@@ -7,12 +7,12 @@ const MEALS = [
 ]
 
 const DISHES = [
-    { img: 'food-porridge', title: 'Овсяная и пшённая каши' },
-    { img: 'food-bakery', title: 'Выпечка и десерты' },
-    { img: 'food-fruits', title: 'Свежие овощи и фрукты' },
-    { img: 'food-salads', title: 'Различные салаты' },
-    { img: 'food-soups', title: 'Супы' },
-    { img: 'food-meat', title: 'Куриные и мясные блюда' },
+    { img: 'food-porridge', title: 'Салаты и холодные закуски' },
+    { img: 'food-bakery', title: 'Свежие фрукты' },
+    { img: 'food-fruits', title: 'Овощные салаты' },
+    { img: 'food-salads', title: 'Десерты и сладости' },
+    { img: 'food-soups', title: 'Фрукты и десерты' },
+    { img: 'food-meat', title: 'Уютная атмосфера ресторана' },
 
 ]
 

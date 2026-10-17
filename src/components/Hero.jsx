@@ -28,8 +28,8 @@ function Hero() {
         className="absolute inset-x-0 bottom-0 h-64 contour-divider opacity-40 pointer-events-none"
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto w-full px-5 sm:px-8 pt-32 pb-16 sm:pb-20">
-        <p className="eyebrow mb-6">Чимган · Тянь-Шань · 1600 м над уровнем моря</p>
+      <div className="relative z-10 max-w-7xl mx-auto xl:mx-24 2xl:mx-56 w-full px-5 sm:px-8 pt-28 xl:pt-10 pb-12 sm:pb-20 xl:pb-40 2xl:pb-56">
+        <p className="eyebrow mb-4 sm:mb-6">Чимган · Тянь-Шань · 1600 м над уровнем моря</p>
 
         <h1 className="font-display text-mist leading-[1.05] text-[2.4rem] sm:text-6xl lg:text-7xl max-w-3xl">
           Горный санаторий
@@ -37,28 +37,28 @@ function Hero() {
           <span className="italic text-gold-light">премиум-класса</span>
         </h1>
 
-        <p className="mt-6 max-w-xl text-mist/75 text-base sm:text-lg leading-relaxed">
+        <p className="mt-5 sm:mt-6 max-w-xl text-mist/75 text-base sm:text-lg leading-relaxed">
           Лечение, SPA и чистейший воздух Тянь-Шаня — там, где организм восстанавливается сам.
           Отдых, который лечит.
         </p>
 
-        <div className="mt-8 flex flex-wrap gap-4">
+        <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row sm:flex-wrap gap-3 sm:gap-4">
           <a
             href="#book"
-            className="inline-flex items-center px-7 py-3.5 bg-gold text-ink text-sm font-medium tracking-wide hover:bg-gold-light transition-colors"
+            className="inline-flex items-center justify-center sm:justify-start px-7 py-3.5 bg-gold text-ink text-sm font-medium tracking-wide hover:bg-gold-light transition-colors"
           >
             Забронировать отдых
           </a>
           <a
             href="#care"
-            className="inline-flex items-center px-7 py-3.5 border border-mist/40 text-mist text-sm tracking-wide hover:border-gold hover:text-gold transition-colors"
+            className="inline-flex items-center justify-center sm:justify-start px-7 py-3.5 border border-mist/40 text-mist text-sm tracking-wide hover:border-gold hover:text-gold transition-colors"
           >
             Направления лечения
           </a>
         </div>
 
         {/* Stats bar */}
-        <div className="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 border-t border-mist/15 pt-8">
+        <div className="mt-10 sm:mt-14 grid grid-cols-2 sm:grid-cols-4 gap-5 sm:gap-8 border-t border-mist/15 pt-6 sm:pt-8">
           {STATS.map((stat) => (
             <div key={stat.label}>
               <div className="font-display text-2xl sm:text-3xl text-mist">{stat.value}</div>
